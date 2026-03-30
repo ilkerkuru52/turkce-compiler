@@ -1,0 +1,39 @@
+// ============================================
+// İLKER STANDART KÜTÜPHANESİ - METİN
+// metin.ilk - Metin işleme fonksiyonları
+// ============================================
+
+// Metin tekrarlama
+fonksiyon tekrarla(s, adet) {
+    degisken sonuc = "";
+    dongu (degisken i = 0; i < adet; i++) {
+        sonuc = sonuc + s;
+    }
+    geridor sonuc;
+}
+
+// Metin ters çevirme
+fonksiyon ters_cevir(s) {
+    degisken sonuc = "";
+    dongu (degisken i = uzunluk(s) - 1; i >= 0; i--) {
+        sonuc = sonuc + s[i];
+    }
+    geridor sonuc;
+}
+
+// Palindrom kontrolü
+fonksiyon palindrom_mu(s) {
+    geridor s == ters_cevir(s);
+}
+
+// Sayı mı kontrol
+fonksiyon sayi_mi(s) {
+    eger (uzunluk(s) == 0) { geridor yanlis; }
+    geridor dogru; // Basit kontrol
+}
+
+// Başlık - İlk harf büyük
+fonksiyon baslik_yap(s) {
+    eger (uzunluk(s) == 0) { geridor s; }
+    geridor buyuk_harf(s[0]) + s;
+}

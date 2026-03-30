@@ -1,0 +1,77 @@
+// ============================================
+// İLKER STANDARt KÜTÜPHANESİ - MATEMATİK
+// matematik.ilk - Matematiksel fonksiyonlar
+// ============================================
+
+// Pi sabiti
+sabit PI = 3.14159265358979;
+sabit E = 2.71828182845905;
+
+// Üs alma
+fonksiyon us(taban, kuvvet) {
+    degisken sonuc = 1;
+    dongu (degisken i = 0; i < kuvvet; i++) {
+        sonuc = sonuc * taban;
+    }
+    geridor sonuc;
+}
+
+// Mutlak değer
+fonksiyon mutlak_deger(x) {
+    eger (x < 0) { geridor -x; }
+    geridor x;
+}
+
+// Maksimum
+fonksiyon en_buyuk(a, b) {
+    eger (a > b) { geridor a; }
+    geridor b;
+}
+
+// Minimum
+fonksiyon en_kucuk(a, b) {
+    eger (a < b) { geridor a; }
+    geridor b;
+}
+
+// GCD (En Büyük Ortak Bölen)
+fonksiyon ebob(a, b) {
+    sure (b != 0) {
+        degisken temp = b;
+        b = a % b;
+        a = temp;
+    }
+    geridor a;
+}
+
+// LCM (En Küçük Ortak Kat)
+fonksiyon ekok(a, b) {
+    geridor (a * b) / ebob(a, b);
+}
+
+// Asal sayı kontrolü
+fonksiyon asal_mi(n) {
+    eger (n < 2) { geridor yanlis; }
+    eger (n == 2) { geridor dogru; }
+    eger (n % 2 == 0) { geridor yanlis; }
+    dongu (degisken i = 3; i * i <= n; i = i + 2) {
+        eger (n % i == 0) { geridor yanlis; }
+    }
+    geridor dogru;
+}
+
+// Fibonacci
+fonksiyon fibonacci(n) {
+    eger (n <= 1) { geridor n; }
+    geridor fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// Çember alanı
+fonksiyon cember_alani(r) {
+    geridor PI * r * r;
+}
+
+// Çember çevresi
+fonksiyon cember_cevresi(r) {
+    geridor 2 * PI * r;
+}

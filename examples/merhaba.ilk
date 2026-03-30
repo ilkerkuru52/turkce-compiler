@@ -1,0 +1,34 @@
+// İlker Studio IDE - Hızlı Başlangıç Örneği
+// Temel .ilk dili özellikleri
+
+// === DEĞİŞKENLER ===
+degisken isim = "İlker";
+degisken yas = 25;
+sabit VERSIYON = "1.0.0";
+
+// === EKRANA YAZMA ===
+yazdir "İlker Studio IDE v" + VERSIYON;
+yazdir "Merhaba, " + isim + "!";
+yazdir "Yaş: " + str(yas);
+
+// === KOŞUL ===
+eger (yas >= 18) {
+    yazdir isim + " yetişkin.";
+} degilse {
+    yazdir isim + " genç.";
+}
+
+// === DÖNGÜ ===
+yazdir "1'den 10'a kadar:";
+dongu (degisken i = 1; i <= 10; i++) {
+    yazdir "  " + str(i);
+}
+
+// === FONKSİYON ===
+fonksiyon hosgeldin(kim) {
+    yazdir "Hoş geldin, " + kim + "!";
+    geridor dogru;
+}
+
+hosgeldin("Geliştirici");
+yazdir "İyi kodlamalar!";

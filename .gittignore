@@ -1,0 +1,9 @@
+bin/
+temp/
+core/build/
+core/bin/
+server/node_modules/
+node_modules/
+.vscode/
+server.log
+*.exe

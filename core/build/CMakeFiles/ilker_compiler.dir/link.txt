@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\ilker_compiler.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\ilker_compiler.dir/objects.a @CMakeFiles\ilker_compiler.dir\objects1.rsp
+C:\msys64\mingw64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\ilker_compiler.dir/objects.a -Wl,--no-whole-archive -o "C:\Users\MONSTER\Desktop\ilker studio ide\core\bin\ilker_compiler.exe" -Wl,--out-implib,libilker_compiler.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ilker_compiler.dir\linkLibs.rsp

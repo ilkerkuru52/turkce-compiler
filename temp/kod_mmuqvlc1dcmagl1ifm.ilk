@@ -1,0 +1,14 @@
+// İlker Studio IDE — Hoş Geldiniz!
+// Türkçe .ilk programlama dili
+// Çalıştırmak için: F5 veya ▶ Çalıştır butonuna basın
+
+yazdir "Merhaba, Dünya!";
+
+degisken isim;
+yazdir "Adın nedir?";
+oku isim;
+yazdir "Hoş geldin, " + isim + "!";
+
+degisken x = 10;
+degisken y = 20;
+yazdir "Toplam: " + str(x + y);

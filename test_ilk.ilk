@@ -1,0 +1,14 @@
+yazdir "Merhaba Dunya!";
+degisken x = 10;
+degisken y = 20;
+yazdir "Toplam: " + str(x + y);
+
+eger (x < y) {
+    yazdir "x, y'den kucuk";
+} degilse {
+    yazdir "x, y'den buyuk";
+}
+
+dongu (degisken i = 1; i <= 5; i++) {
+    yazdir "Sayac: " + str(i);
+}

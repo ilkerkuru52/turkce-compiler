@@ -1,0 +1,35 @@
+// Fibonacci Dizisi - İlker Dili Örneği
+
+// Özyineli (Recursive) Fibonacci
+fonksiyon fibonacci_r(n) {
+    eger (n <= 1) { geridor n; }
+    geridor fibonacci_r(n - 1) + fibonacci_r(n - 2);
+}
+
+// Döngüsel (Iterative) Fibonacci - daha hızlı
+fonksiyon fibonacci_i(n) {
+    eger (n <= 1) { geridor n; }
+    degisken a = 0;
+    degisken b = 1;
+    dongu (degisken i = 2; i <= n; i++) {
+        degisken temp = a + b;
+        a = b;
+        b = temp;
+    }
+    geridor b;
+}
+
+yazdir "=== Fibonacci Dizisi ===";
+yazdir "İlk 15 Fibonacci sayısı:";
+
+degisken dizi = [];
+dongu (degisken i = 0; i < 15; i++) {
+    ekle(dizi, fibonacci_i(i));
+}
+
+dongu (degisken j = 0; j < uzunluk(dizi); j++) {
+    yazdir "F(" + str(j) + ") = " + str(dizi[j]);
+}
+
+yazdir "";
+yazdir "F(20) = " + str(fibonacci_i(20));
